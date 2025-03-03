@@ -15,6 +15,7 @@ function getMoveName(argMoveId) {
 	return 'papier'
   } else if (randomNumber == 3) {
 	return 'nożyce'
+  }
 
   printMessage('Nie znam ruchu o id ' + argMoveId + '.');
   return 'nieznany ruch';
@@ -34,10 +35,10 @@ function displayResult(argComputerMove, argPlayerMove) {
   } else if (argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
     printMessage('Ty wygrywasz!');
   } else if (argComputerMove == 'nożyce' && argPlayerMove == 'nożyce') {
-    printMessage('Remis!')
+    printMessage('Remis!');
   } else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
-    printMessage('Wygrywa komputer!')
+    printMessage('Wygrywa komputer!');
   } else if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
-    printMessage('Ty wygrywasz!')
+    printMessage('Ty wygrywasz!');
   }  
 }
